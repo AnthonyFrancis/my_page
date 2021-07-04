@@ -13,8 +13,13 @@
   </head>
 
   <body class="font-serif" >
-    <nav class="">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section>
+        <div class="container px-4 mx-auto">
+
+          <nav class="flex justify-end items-center">    
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         <div class="flex items-center justify-center h-16">
           <div class="flex items-center">
             <div class="hidden md:block">
@@ -29,7 +34,47 @@
           </div>
         </div>
       </div>
-    </nav>
+      <div class="md:hidden flex justify-end">
+        <button class="flex items-center px-3 py-2 text-red-600 navbar-burger focus:outline-none">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Mobile menu</title>
+              <path d="M4 6H20M4 12H20M4 18H11" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+            </svg>
+        </button>
+      </div>
+          </nav>
+        </div>
+        <div class="hidden navbar-menu relative z-50">
+          <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
+          <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+              <a class="mr-auto text-3xl font-semibold leading-none" href="#"><img class="h-10" src="metis-assets/logos/metis/metis.svg" alt="" width="auto"></a>
+              <button class="navbar-close">
+                <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <div>
+              <ul>
+                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="/">Home</a></li>
+                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="/blog">Blog</a></li>
+                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="/projects">Projects</a></li>
+                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="/products">Products</a></li>
+              </ul>
+            </div>
+            <div class="mt-auto">
+              <p class="my-4 text-xs text-blueGray-400">
+                <span>Get in Touch</span>
+                <a class="text-blue-600 hover:text-blue-600 underline"  href="mailto:anthony@anthonyfrancis.co">anthony@anthonyfrancis.co</a>
+              </p>
+              <a class="inline-block px-1" href="#"><img src="metis-assets/icons/facebook-blue.svg" alt=""></a><a class="inline-block px-1" href="#"><img src="metis-assets/icons/twitter-blue.svg" alt=""></a><a class="inline-block px-1" href="#"><img src="metis-assets/icons/instagram-blue.svg" alt=""></a>
+            </div>
+          </nav>
+        </div>
+      </section>
+
     <%= yield %>
   </body>
 </html>
