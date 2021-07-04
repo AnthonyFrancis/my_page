@@ -4,3 +4,14 @@
 
 /* Add any custom CSS here */
 @import "tailwindcss/utilities";
+
+.bg {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url('/assets/background.jpeg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; background-size: cover;
+}
+
+.bg-brown {
+    background-color: #E2E2E4;
+}
