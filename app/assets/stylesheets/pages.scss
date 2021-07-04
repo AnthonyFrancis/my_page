@@ -4,12 +4,11 @@
 
 
 body {
-    background: linear-gradient( rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url('/assets/background.jpeg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: linear-gradient( rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url('/assets/background.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover;
-    background-color: #464646;
+    -o-background-size: cover;
 }
 
 .bg-brown {
